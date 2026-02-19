@@ -23,7 +23,7 @@
   width: 100%;
 }
 
-.choice-card.reverse {
+.reverse {
   flex-direction: row-reverse;
 }
 
