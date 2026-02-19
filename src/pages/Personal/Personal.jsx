@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import LinkDevPersonal from "../../components/LinkDevPersonal/LinkDevPersonal";
 import "./Personal.css";
 
 /* IMG Import */
@@ -17,13 +18,12 @@ import { FaInstagram, FaFacebook, FaGithub, FaLinkedin } from "react-icons/fa";
 function Personal() {
   return (
     <>
-      <Link to="/">voltar</Link>
       <header className="header" id="header">
         <div className="container">
           <nav className="nav">
-            <a href="#inicio" className="logo">
+            <Link to="/" className="logo">
               LEANDRO OLIOTA
-            </a>
+            </Link>
             <button className="nav-toggle" id="navToggle" aria-label="Abrir menu">
               <span></span>
               <span></span>
@@ -47,6 +47,9 @@ function Personal() {
               </li>
               <li>
                 <a href="#faq">FAQ</a>
+              </li>
+              <li>
+                <LinkDevPersonal />
               </li>
             </ul>
           </nav>

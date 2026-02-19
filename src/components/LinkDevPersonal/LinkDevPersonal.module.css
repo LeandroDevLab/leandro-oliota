@@ -1,0 +1,11 @@
+.link {
+  background-color: #cc0000;
+  padding: 5px 12px;
+  border-radius: 8px;
+  font-weight: bold;
+  position: relative;
+  font-weight: 500;
+  color: var(--text);
+  transition: var(--transition);
+  position: relative;
+}
