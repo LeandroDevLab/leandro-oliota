@@ -21,7 +21,7 @@ function Home() {
           title="Personal Trainer"
           path="/personal"
           description="Avaliação física; Treino Personalizado; TAF; Corrida."
-          className="choice-card reverse"
+          variant="reverse"
         />
       </section>
       <footer className="footer">

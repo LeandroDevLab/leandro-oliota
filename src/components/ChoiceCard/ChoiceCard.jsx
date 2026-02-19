@@ -1,14 +1,14 @@
 import { Link } from "react-router-dom";
-import "./ChoiceCard.css";
+import styles from "./ChoiceCard.module.css";
 
-function ChoiceCard({ img, title, path, description, className = "choice-card" }) {
+function ChoiceCard({ img, title, path, description, variant = "" }) {
   return (
-    <Link to={path} className={className}>
-      <img className="choice-img" src={img} alt="" />
-      <div>
-        <h2>{title}</h2>
-        <p>{description}</p>
-        <span className="saiba-mais">Saiba mais </span>
+    <Link to={path} className={`${styles.choiceCard} ${variant ? styles[variant] : ""}`}>
+      <img className={styles.choiceImg} src={img} alt="" />
+      <div className={styles.choiceCardDiv}>
+        <h2 className={styles.choiceTitle}>{title}</h2>
+        <p className={styles.choiceDescription}>{description}</p>
+        <span className={styles.saibaMais}>Saiba mais </span>
       </div>
     </Link>
   );

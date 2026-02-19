@@ -1,4 +1,4 @@
-.choice-card {
+.choiceCard {
   width: 90%;
   text-decoration: none;
   font-weight: 100;
@@ -19,7 +19,7 @@
   box-shadow: 1px 1px 2px #fff;
 }
 
-.choice-card div {
+.choiceCardDiv {
   width: 100%;
 }
 
@@ -27,7 +27,7 @@
   flex-direction: row-reverse;
 }
 
-.choice-card h2 {
+.choiceTitle {
   font-weight: 300;
   color: #fff;
   text-align: center;
@@ -35,7 +35,7 @@
   font-size: clamp(20px, 5vw, 24px);
 }
 
-.choice-card p {
+.choiceDescription {
   color: #fff;
   text-align: justify;
   font-size: clamp(14px, 3.6vw, 18px);
@@ -43,20 +43,20 @@
   padding-bottom: 5px;
 }
 
-.saiba-mais {
+.saibaMais {
   color: #fff;
   text-align: center;
   padding-top: clamp(5px, 2vw, 10px);
   font-weight: 500;
 }
 
-.choice-img {
+.choiceImg {
   margin-top: -40px;
   width: 40%;
 }
 
 @media (min-width: 450px) {
-  .choice-card {
+  .choiceCard {
     width: 400px;
   }
 }
