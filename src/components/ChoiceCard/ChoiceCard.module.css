@@ -8,15 +8,16 @@
   align-items: center;
   justify-content: end;
   padding: 10px 20px;
+
   background: linear-gradient(
     225deg,
-    rgba(39, 28, 255, 1) 0%,
-    rgba(112, 148, 255, 1) 60%,
-    rgba(0, 22, 224, 1) 100%
+    rgba(204, 0, 0, 1) 0%,
+    rgba(255, 102, 102, 1) 60%,
+    rgba(204, 0, 0, 1) 100%
   );
   border-radius: 32px;
-  margin: 30px 20px;
-  box-shadow: 1px 1px 2px #fff;
+  margin: 40px 20px 0;
+  box-shadow: 1px 1px 15px #f8be00;
 }
 
 .choiceCardDiv {

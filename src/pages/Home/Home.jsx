@@ -3,13 +3,14 @@ import profileImg from "../../assets/img/leandro-sobre.png";
 import devImg from "../../assets/img/img-dev.png";
 import personalImg from "../../assets/img/img-personal.png";
 import "./Home.css";
+import LeandroOliota from "../../components/LeandroOliota/LeandroOliota";
 
 function Home() {
   return (
     <main>
       <section className="hero_section">
         <img className="hero_img" src={profileImg} alt="" />
-        <h1 className="hero_title">Leandro Oliota</h1>
+        <LeandroOliota />
         <ChoiceCard
           img={devImg}
           title="Desenvolvedor Web"

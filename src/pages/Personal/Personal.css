@@ -7,7 +7,7 @@
 :root {
   --primary: #ff2d2d;
   --primary-dark: #cc0000;
-  --secondary: #ffd60a;
+  --secondary: #f8be00;
   --accent: #fff3b0;
   --bg: #0a0a0a;
   --bg-alt: #1a1a1a;
@@ -142,11 +142,6 @@ p {
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-.logo {
-  font-size: 1.5rem;
-  font-weight: 800;
-  color: var(--primary);
 }
 .nav-menu {
   display: flex;

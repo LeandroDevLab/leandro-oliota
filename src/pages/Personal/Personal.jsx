@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import LinkDevPersonal from "../../components/LinkDevPersonal/LinkDevPersonal";
 import "./Personal.css";
 
@@ -14,6 +13,7 @@ import beforeAfter4Img from "../../assets/img/personal/antesedepois4.png";
 
 /* Icons import */
 import { FaInstagram, FaFacebook, FaGithub, FaLinkedin } from "react-icons/fa";
+import LeandroOliota from "../../components/LeandroOliota/LeandroOliota";
 
 function Personal() {
   return (
@@ -21,9 +21,7 @@ function Personal() {
       <header className="header" id="header">
         <div className="container">
           <nav className="nav">
-            <Link to="/" className="logo">
-              LEANDRO OLIOTA
-            </Link>
+            <LeandroOliota />
             <button className="nav-toggle" id="navToggle" aria-label="Abrir menu">
               <span></span>
               <span></span>
