@@ -20,6 +20,11 @@ import HeroPersonal from "./components/HeroPersonal/HeroPersonal";
 
 function Personal() {
   const [faqActive, setFaqActive] = useState(null);
+  const [navActive, setNavActive] = useState(null);
+
+  function navHandleClick() {
+    setNavActive((prev) => (prev ? null : "active"));
+  }
 
   function faqHandleClick(index) {
     setFaqActive((prev) => (prev === index ? null : index));
@@ -31,12 +36,17 @@ function Personal() {
         <div className="container">
           <nav className="nav">
             <LeandroOliota />
-            <button className="nav-toggle" id="navToggle" aria-label="Abrir menu">
+            <button
+              onClick={navHandleClick}
+              className="nav-toggle"
+              id="navToggle"
+              aria-label="Abrir menu"
+            >
               <span></span>
               <span></span>
               <span></span>
             </button>
-            <ul className="nav-menu" id="navMenu">
+            <ul className={`nav-menu ${navActive}`} id="navMenu">
               <li>
                 <a href="#inicio">Início</a>
               </li>
