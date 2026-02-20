@@ -1,16 +1,210 @@
-# React + Vite
+# 🚀 Leandro Oliota — Portfólio Dev & Personal
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Projeto desenvolvido com **React + Vite**, unificando duas áreas profissionais:
 
-Currently, two official plugins are available:
+- 💻 Desenvolvedor Front‑end
+- 🏋️ Personal Trainer
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+A proposta é ter uma **landing inicial com escolha de área** e rotas separadas para cada atuação, utilizando boas práticas modernas de componentização, organização de pastas e CSS Modules.
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🌐 Deploy
 
-## Expanding the ESLint configuration
+🔗 Produção: [https://leandrooliota.com](https://leandrooliota.com)
+🔗 Vercel: [https://leandro-oliota.vercel.app/](https://leandro-oliota.vercel.app/)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Deploy automatizado via **Vercel** conectado ao GitHub.
+
+---
+
+# 📚 Objetivo do Projeto
+
+Este projeto não é apenas um portfólio.
+Ele também serve como:
+
+- 📖 Registro de evolução com React
+- 🧱 Prática de arquitetura escalável
+- 🎯 Aplicação de boas práticas (componentização, variantes, CSS Modules)
+- 🧠 Material de estudo para iniciantes
+
+A ideia é evoluir gradualmente, melhorando estrutura e organização a cada commit.
+
+---
+
+# 🛠️ Tecnologias Utilizadas
+
+- ⚛️ React
+- ⚡ Vite
+- 🧭 React Router DOM
+- 🎞️ Swiper.js (galeria de depoimentos)
+- 🎨 CSS Modules
+
+---
+
+# 📂 Estrutura Atual do Projeto
+
+```
+src/
+ ├── components/
+ │    ├── ChoiceCard/
+ │    ├── SwiperTestimony/
+ │    └── ...
+ │
+ ├── pages/
+ │    ├── Home/
+ │    ├── Dev/
+ │    └── Personal/
+ │
+ ├── assets/
+ ├── App.jsx
+ └── main.jsx
+```
+
+### 📌 Organização adotada
+
+- Cada componente possui sua própria pasta.
+- Uso de `*.module.css` para evitar conflitos de estilo.
+- Componentes reutilizáveis utilizam **props dinâmicas**.
+- Estrutura pensada para escalabilidade futura.
+
+---
+
+# 🧩 Componentes Criados
+
+## 🔹 ChoiceCard
+
+Card reutilizável utilizado na página inicial para direcionar o usuário.
+
+Possui suporte a:
+
+- Props dinâmicas
+- Variante de estilo
+- CSS Module isolado
+
+---
+
+## 🔹 SwiperTestimony
+
+Slider de depoimentos utilizando Swiper.
+
+Recursos implementados:
+
+- Autoplay
+- Paginação clicável
+- Loop infinito
+- Breakpoints para responsividade
+
+Exemplo de responsividade:
+
+```js
+breakpoints={{
+  0: { slidesPerView: 1 },
+  768: { slidesPerView: 2 },
+  1200: { slidesPerView: 3 }
+}}
+```
+
+---
+
+# 🎨 Decisões Técnicas Importantes
+
+### ✅ CSS Modules
+
+Adotado para evitar problemas de cascata e conflitos globais.
+
+Exemplo:
+
+```js
+import styles from "./ChoiceCard.module.css";
+```
+
+Isso garante isolamento de estilos e maior escalabilidade.
+
+---
+
+### ✅ Conventional Commits
+
+Os commits seguem padrão como:
+
+```
+feat: add home navigation link
+refactor(ChoiceCard): migrate CSS to CSS Module
+```
+
+Isso mantém o histórico organizado e profissional.
+
+---
+
+# 📈 Evolução do Projeto
+
+✔ Migração de HTML/CSS puro para React
+✔ Separação em rotas (/dev e /personal)
+✔ Componentização progressiva
+✔ Implementação de CSS Modules
+✔ Deploy e domínio próprio configurado
+
+Próximos passos incluem:
+
+- Melhorar animações
+- Refinar Design System
+- Criar versão mais escalável
+- Evoluir para aplicação com backend futuramente
+
+---
+
+# 📸 Screenshots
+
+### 🏠 Home
+
+![Home](./screenshots/home.png)
+
+### 💻 Dev
+
+![Dev](./screenshots/dev.png)
+
+### 🏋️ Personal
+
+![Personal](./screenshots/personal.png)
+
+---
+
+# 🧠 Para Iniciantes
+
+Se você está começando no React, este projeto mostra:
+
+- Como estruturar pastas
+- Como usar React Router
+- Como componentizar corretamente
+- Como evitar conflitos de CSS
+- Como fazer deploy profissional
+
+## 🚀 Como rodar localmente
+
+> Não importa o seu sistema operacional, o processo é bem parecido. Escolha o terminal de sua preferência (**Git Bash**, **PowerShell**, **Terminal do Mac** ou **Linux**) e siga os passos:
+
+```bash
+git clone https://github.com/LeandroDevLab/leandro-oliota
+cd leandro-oliota
+npm install
+npm run dev
+```
+
+---
+
+# 👨‍💻 Autor
+
+**Leandro Oliota**
+Desenvolvedor Front‑end & Personal Trainer
+
+🔗 GitHub: [https://github.com/LeandroDevLab](https://github.com/LeandroDevLab)
+
+---
+
+# ⭐ Contribuição
+
+Sinta-se à vontade para abrir issues ou sugerir melhorias.
+
+---
+
+> Projeto em constante evolução 🚀

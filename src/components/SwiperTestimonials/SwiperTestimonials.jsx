@@ -3,11 +3,12 @@ import { Autoplay, Pagination } from "swiper/modules";
 
 import "swiper/css";
 import "swiper/css/pagination";
-import TestimonyCard from "./TestimonyCard/TestimonyCard";
+import TestimonyCard from "../TestimonyCard/TestimonyCard";
 
 function SwiperTestimonials({ testimonials }) {
   return (
     <Swiper
+      style={{ paddingBottom: "50px" }}
       modules={[Autoplay, Pagination]}
       autoplay={{ delay: 3000 }}
       pagination={{ clickable: true }}

@@ -18,7 +18,7 @@ import TestimonyCard from "../../components/TestimonyCard/TestimonyCard";
 
 /* Variáveis */
 import { personalCards } from "../../data/personalGallery";
-import SwiperTestimonials from "../../components/SwiperTestimonials";
+import SwiperTestimonials from "../../components/SwiperTestimonials/SwiperTestimonials";
 
 function Personal() {
   return (
