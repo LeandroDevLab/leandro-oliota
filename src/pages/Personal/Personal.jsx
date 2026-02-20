@@ -1,3 +1,4 @@
+import { useState } from "react";
 import LinkDevPersonal from "../../components/LinkDevPersonal/LinkDevPersonal";
 import "./Personal.css";
 
@@ -18,6 +19,12 @@ import SwiperBeforeAfter from "./components/SwiperBeforeAfter/SwiperBeforeAfter"
 import HeroPersonal from "./components/HeroPersonal/HeroPersonal";
 
 function Personal() {
+  const [faqActive, setFaqActive] = useState(null);
+
+  function faqHandleClick(index) {
+    setFaqActive((prev) => (prev === index ? null : index));
+  }
+
   return (
     <>
       <header className="header" id="header">
@@ -220,8 +227,12 @@ function Personal() {
             <h2>Perguntas Frequentes</h2>
             <p>Tire suas dúvidas</p>
           </div>
+
           <div className="faq-list">
-            <div className="faq-item">
+            <div
+              className={`faq-item ${faqActive === 0 ? "active" : ""}`}
+              onClick={() => faqHandleClick(0)}
+            >
               <button className="faq-question">
                 O treino online realmente funciona?<span className="faq-icon">+</span>
               </button>
@@ -235,7 +246,10 @@ function Personal() {
                 </p>
               </div>
             </div>
-            <div className="faq-item">
+            <div
+              className={`faq-item ${faqActive === 1 ? "active" : ""}`}
+              onClick={() => faqHandleClick(1)}
+            >
               <button className="faq-question">
                 O treino é realmente personalizado ou é um modelo padrão?
                 <span className="faq-icon">+</span>
@@ -249,7 +263,10 @@ function Personal() {
                 </p>
               </div>
             </div>
-            <div className="faq-item">
+            <div
+              className={`faq-item ${faqActive === 2 ? "active" : ""}`}
+              onClick={() => faqHandleClick(2)}
+            >
               <button className="faq-question">
                 Sou iniciante. Posso fazer o acompanhamento?<span className="faq-icon">+</span>
               </button>
@@ -261,7 +278,10 @@ function Personal() {
                 </p>
               </div>
             </div>
-            <div className="faq-item">
+            <div
+              className={`faq-item ${faqActive === 3 ? "active" : ""}`}
+              onClick={() => faqHandleClick(3)}
+            >
               <button className="faq-question">
                 Em quanto tempo começo a ver resultados?<span className="faq-icon">+</span>
               </button>
