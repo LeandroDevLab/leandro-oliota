@@ -7,18 +7,15 @@ import sobreImg from "../../assets/img/leandro-sobre.png";
 import avaliacaoImg from "../../assets/img/personal/avaliacao1.png";
 import personalImg from "../../assets/img/personal/personal-trainer.png";
 import treinoImg from "../../assets/img/personal/treino-personalizado.png";
-import beforeAfter1Img from "../../assets/img/personal/antesedepois1.png";
-import beforeAfter2Img from "../../assets/img/personal/antesedepois2.png";
-import beforeAfter4Img from "../../assets/img/personal/antesedepois4.png";
 
 /* Icons import */
 import { FaInstagram, FaFacebook, FaGithub, FaLinkedin } from "react-icons/fa";
 import LeandroOliota from "../../components/LeandroOliota/LeandroOliota";
-import TestimonyCard from "../../components/TestimonyCard/TestimonyCard";
 
 /* Variáveis */
 import { personalCards } from "../../data/personalGallery";
 import SwiperTestimonials from "../../components/SwiperTestimonials/SwiperTestimonials";
+import SwiperBeforeAfter from "./components/SwiperBeforeAfter/SwiperBeforeAfter";
 
 function Personal() {
   return (
@@ -244,53 +241,7 @@ function Personal() {
             <h2>Transformações Reais</h2>
             <p>Resultados que inspiram</p>
           </div>
-          <div className="destaques-grid">
-            <div className="destaque-card">
-              <div className="destaque-image">
-                <img
-                  src={beforeAfter1Img}
-                  alt="Foto 1 do antes e depois de alunos do Personal trainer Leandro Oliota, demonstra aumento de massa muscular"
-                />
-                <span className="destaque-tag">Antes → Depois</span>
-              </div>
-              <div className="destaque-content">
-                <h3>+10kg de massa muscular</h3>
-                <p>Tinha vergonha de usar vestidos, pois achava as pernas finas.</p>
-                <span className="destaque-badge">Treino + Nutrição</span>
-              </div>
-            </div>
-            <div className="destaque-card">
-              <div className="destaque-image">
-                <img
-                  src={beforeAfter2Img}
-                  alt="Foto 2 do antes e depois de alunos do Personal trainer Leandro Oliota, demonstra aumento de massa muscular e redução de gordura"
-                />
-                <span className="destaque-tag">Antes → Depois</span>
-              </div>
-              <div className="destaque-content">
-                <h3>-12kg de gordura corporal</h3>
-                <p>Conquistou considerável redução de gordura e aumento da massa muscular.</p>
-                <span className="destaque-badge">12 meses de treino</span>
-              </div>
-            </div>
-            <div className="destaque-card">
-              <div className="destaque-image">
-                <img
-                  src={beforeAfter4Img}
-                  alt="Foto 2 do antes e depois de alunos do Personal trainer Leandro Oliota, demonstra aumento de massa muscular e redução de gordura"
-                />
-                <span className="destaque-tag">Antes → Depois</span>
-              </div>
-              <div className="destaque-content">
-                <h3>Primeira competição</h3>
-                <p>
-                  Além da redução de gordura e ganho de massa muscular, participou de sua primeira
-                  corrida de rua e finalizou bem os 5km.
-                </p>
-                <span className="destaque-badge">6 meses de evolução</span>
-              </div>
-            </div>
-          </div>
+          <SwiperBeforeAfter />
         </div>
       </section>
 

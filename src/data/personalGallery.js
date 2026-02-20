@@ -35,3 +35,41 @@ export const personalCards = [
       "",
   }, */
 ];
+
+import beforeAfter1 from "../assets/img/personal/antesedepois1.png";
+import beforeAfter2 from "../assets/img/personal/antesedepois2.png";
+import beforeAfter4 from "../assets/img/personal/antesedepois4.png";
+import beforeAfter5 from "../assets/img/personal/antesedepois5.png";
+
+export const personalCases = [
+  {
+    src: beforeAfter1,
+    alt: "Foto 1 do antes e depois de alunos do Personal trainer Leandro Oliota, demonstra aumento de massa muscular",
+    title: "+10kg de massa muscular",
+    description: "Tinha vergonha de usar vestidos, pois achava as pernas finas.",
+    emphasis: "Treino + Nutrição",
+  },
+  {
+    src: beforeAfter2,
+    alt: "Foto 1 do antes e depois de alunos do Personal trainer Leandro Oliota, demonstra aumento de massa muscular",
+    title: "-30kg de gordura",
+    description:
+      "Pesava 185kg, na foto estava com 170kg e hoje com 155kg, pois não tinha vergonha até a redução dos primeiros 15kg.",
+    emphasis: "Personal + On-line",
+  },
+  {
+    src: beforeAfter4,
+    alt: "Foto 1 do antes e depois de alunos do Personal trainer Leandro Oliota, demonstra aumento de massa muscular",
+    title: "-9kg de balança",
+    description:
+      "O objetivo era terminar uma prova de 5km, CCONSEGUI BEM e ainda reduziu gordura, ganhou de massa muscular.",
+    emphasis: "100% on-line",
+  },
+  {
+    src: beforeAfter5,
+    alt: "Foto 1 do antes e depois de alunos do Personal trainer Leandro Oliota, demonstra aumento de massa muscular",
+    title: "-11kg de gordura",
+    description: "+4kg de massa muscular, achava impossível perder peso por causa da fibromialgia.",
+    emphasis: "Personal + On-line",
+  },
+];
