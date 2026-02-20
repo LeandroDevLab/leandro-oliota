@@ -24,7 +24,7 @@ main {
 }
 
 .hero_img {
-  margin: 20px auto 15px;
+  margin: 210px auto 15px auto;
   width: 155px;
   border-radius: 50%;
   border: none;
