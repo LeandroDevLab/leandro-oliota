@@ -14,6 +14,11 @@ import beforeAfter4Img from "../../assets/img/personal/antesedepois4.png";
 /* Icons import */
 import { FaInstagram, FaFacebook, FaGithub, FaLinkedin } from "react-icons/fa";
 import LeandroOliota from "../../components/LeandroOliota/LeandroOliota";
+import TestimonyCard from "../../components/TestimonyCard/TestimonyCard";
+
+/* Variáveis */
+import { personalCards } from "../../data/personalGallery";
+import SwiperTestimonials from "../../components/SwiperTestimonials";
 
 function Personal() {
   return (
@@ -298,95 +303,14 @@ function Personal() {
         </div>
       </section>
 
+      {/* ============= Depoiment ==============*/}
       <section className="depoimentos" id="depoimentos">
         <div className="container">
           <div className="section-header">
             <h2>O Que Nossos Alunos Dizem</h2>
             <p>Histórias de quem transformou sua vida</p>
           </div>
-          <div className="depoimentos-grid">
-            <div className="depoimento-card">
-              <div className="depoimento-header">
-                <div className="avatar">
-                  <img
-                    src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&q=80"
-                    alt="Rodrigo"
-                  />
-                </div>
-                <div className="depoimento-info">
-                  <h4>Rodrigo Mendes</h4>
-                  <span>Aluno do plano on-line</span>
-                </div>
-              </div>
-              <p>
-                “O que mais gostei foi o acompanhamento. Não é só receber um treino e pronto. Ele
-                acompanha, ajusta e cobra resultado. Isso me ajudou a manter constância e
-                disciplina.”
-              </p>
-              <div className="depoimento-stars">⭐⭐⭐⭐⭐</div>
-            </div>
-            <div className="depoimento-card">
-              <div className="depoimento-header">
-                <div className="avatar">
-                  <img
-                    src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&q=80"
-                    alt="Patricia"
-                  />
-                </div>
-                <div className="depoimento-info">
-                  <h4>Patricia Silva</h4>
-                  <span>Aluno do plano on-line</span>
-                </div>
-              </div>
-              <p>
-                “Eu tinha vergonha de começar e não sabia por onde começar. A avaliação me deu
-                segurança e o treino foi totalmente adaptado ao meu nível. Me senti acompanhado o
-                tempo todo.”
-              </p>
-              <div className="depoimento-stars">⭐⭐⭐⭐⭐</div>
-            </div>
-            <div className="depoimento-card">
-              <div className="depoimento-header">
-                <div className="avatar">
-                  <img
-                    src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=100&q=80"
-                    alt="Lucas"
-                  />
-                </div>
-                <div className="depoimento-info">
-                  <h4>Lucas Costa</h4>
-                  <span>Aluno de Personal trainer</span>
-                </div>
-              </div>
-              <p>
-                “Eu treinava há anos e estava estagnado. O treino personalizado fez toda diferença.
-                O Leandro ajustou detalhes que eu nunca tinha percebido. Comecei a evoluir novamente
-                e meus resultados apareceram rápido.”
-              </p>
-              <div className="depoimento-stars">⭐⭐⭐⭐⭐</div>
-            </div>
-            <div className="depoimento-card">
-              <div className="depoimento-header">
-                <div className="avatar">
-                  <img
-                    src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&q=80"
-                    alt="Amanda"
-                  />
-                </div>
-                <div className="depoimento-info">
-                  <h4>Amanda Borges</h4>
-                  <span>Aluna do plano on-line</span>
-                </div>
-              </div>
-              <p>
-                “Eu já tinha tentado treinar sozinha várias vezes e sempre desistia. Com o
-                acompanhamento do Leandro, senti que finalmente tinha um plano claro. Em poucas
-                semanas já percebi diferença no meu corpo e na minha disposição. Hoje me sinto mais
-                confiante e consistente.”
-              </p>
-              <div className="depoimento-stars">⭐⭐⭐⭐⭐</div>
-            </div>
-          </div>
+          <SwiperTestimonials testimonials={personalCards} />
         </div>
       </section>
 
