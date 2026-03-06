@@ -10,3 +10,28 @@ main {
 .emBreve {
   font-size: 50px;
 }
+
+.sior {
+  width: 90%;
+  border: 2px solid #fff;
+  padding: .3em 1em;
+  border-radius: 32px;
+  line-height: 40px;
+  text-align: center;
+  text-wrap: initial;
+  margin: auto;
+  text-transform: uppercase;
+  transition: 0.5s ease-in-out;
+
+}
+
+.sior:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+.sior:active {
+  background-color: #fff;
+  color: #000;
+  opacity: 0.5;
+}
