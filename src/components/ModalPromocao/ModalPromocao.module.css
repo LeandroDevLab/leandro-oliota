@@ -1,0 +1,47 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  max-width: 700px;
+  background-color: #fff;
+  color: #000;
+  position: fixed;
+  top: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 9999;
+  height: 500px;
+  margin: auto;
+  border-radius: 30px;
+  animation: boxShadowRotation 4s linear infinite;
+  opacity: 0;
+}
+
+.container.open{
+  opacity: 1
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 40px;
+  color: #ff0000;
+}
+
+@keyframes boxShadowRotation {
+  0%, 100% {
+    box-shadow: 10px 10px 15px #ff00f2;
+  }
+  25% {
+    box-shadow: -10px 10px 15px #ff00f2;
+  }
+  50% {
+    box-shadow: -10px -10px 15px #ff00f2;
+  }
+  75% {
+    box-shadow: 10px -10px 15px #ff00f2;
+  }
+}

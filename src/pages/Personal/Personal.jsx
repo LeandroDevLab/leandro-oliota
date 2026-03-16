@@ -17,6 +17,7 @@ import { personalCards } from "../../data/personalGallery";
 import SwiperTestimonials from "../../components/SwiperTestimonials/SwiperTestimonials";
 import SwiperBeforeAfter from "./components/SwiperBeforeAfter/SwiperBeforeAfter";
 import HeroPersonal from "./components/HeroPersonal/HeroPersonal";
+import ModalPromocao from "../../components/ModalPromocao/ModalPromocao";
 
 function Personal() {
   const [faqActive, setFaqActive] = useState(null);
@@ -32,6 +33,7 @@ function Personal() {
 
   return (
     <>
+    <ModalPromocao/>
       <header className="header" id="header">
         <div className="container">
           <nav className="nav">
