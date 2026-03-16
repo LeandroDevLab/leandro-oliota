@@ -4,7 +4,7 @@
   justify-content: center;
   align-items: center;
   width: 90%;
-  max-width: 700px;
+  max-width: 500px;
   background-color: #fff;
   color: #000;
   position: fixed;
@@ -12,7 +12,7 @@
   left: 50%;
   transform: translateX(-50%);
   z-index: 9999;
-  height: 500px;
+  min-height: 500px;
   margin: auto;
   border-radius: 30px;
   animation: boxShadowRotation 4s linear infinite;
@@ -31,6 +31,37 @@
   color: #ff0000;
 }
 
+.title {
+  text-align: center;
+  margin-top: 50px;
+  padding: 0 20px;
+}
+
+.imgContent {
+  width: 90%;
+  overflow: hidden;
+  object-fit: cover;
+  border-radius: 30px;
+}
+
+.link {
+  padding: 10px 10px;
+  background-color: rgb(13, 194, 13);
+  margin: 20px auto;
+  border-radius: 20px;
+  text-transform: uppercase;
+  font-weight: 600;
+  text-align: center;
+}
+
+.link:hover{
+  opacity: 0.8;
+}
+
+.link:active{
+  opacity: 0.5;
+}
+
 @keyframes boxShadowRotation {
   0%, 100% {
     box-shadow: 10px 10px 15px #ff00f2;
@@ -44,4 +75,11 @@
   75% {
     box-shadow: 10px -10px 15px #ff00f2;
   }
+}
+
+@media (max-width: 420px){
+  .imgContent {
+    max-height: 350px;
+  }
+
 }

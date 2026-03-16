@@ -19,6 +19,8 @@ import SwiperBeforeAfter from "./components/SwiperBeforeAfter/SwiperBeforeAfter"
 import HeroPersonal from "./components/HeroPersonal/HeroPersonal";
 import ModalPromocao from "../../components/ModalPromocao/ModalPromocao";
 
+import promocaoImg from '../../assets/img/promocao.png'
+
 function Personal() {
   const [faqActive, setFaqActive] = useState(null);
   const [navActive, setNavActive] = useState(null);
@@ -33,7 +35,13 @@ function Personal() {
 
   return (
     <>
-    <ModalPromocao/>
+    <ModalPromocao 
+      img={promocaoImg} 
+      numero='83996157815' 
+      message={`Olá! Quero aproveitar a promoção relâmpago! O código promocional é: `}
+      title='Promoção Relâmpago!'
+      textButton='Quero aproveitar a promoção'
+      />
       <header className="header" id="header">
         <div className="container">
           <nav className="nav">
