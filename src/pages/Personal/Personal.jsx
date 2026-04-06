@@ -19,7 +19,7 @@ import SwiperBeforeAfter from "./components/SwiperBeforeAfter/SwiperBeforeAfter"
 import HeroPersonal from "./components/HeroPersonal/HeroPersonal";
 import ModalPromocao from "../../components/ModalPromocao/ModalPromocao";
 
-import promocaoImg from '../../assets/img/promocao.png'
+import promocaoImg from "../../assets/img/promocao.png";
 
 function Personal() {
   const [faqActive, setFaqActive] = useState(null);
@@ -35,13 +35,6 @@ function Personal() {
 
   return (
     <>
-    <ModalPromocao 
-      img={promocaoImg} 
-      numero='83996157815' 
-      message={`Olá! Quero aproveitar a promoção relâmpago! O código promocional é: `}
-      title='Promoção Relâmpago!'
-      textButton='Quero aproveitar a promoção'
-      />
       <header className="header" id="header">
         <div className="container">
           <nav className="nav">
@@ -104,15 +97,19 @@ function Personal() {
             <div className="sobre-text-content">
               <div className="sobre-text">
                 <p>
-                  Desde 2010, eu <strong>Leandro Oliota</strong> sou referência em treino de
-                  qualidade na Paraíba e região. Com mais de 16 anos de profissão.{" "}
-                  <b>Mestre em Avaliação Física e Especialista em Treinamento</b>, transformo
-                  objetivos em resultados.
+                  Desde 2010, eu <strong>Leandro Oliota</strong> sou referência
+                  em treino de qualidade na Paraíba e região. Com mais de 16
+                  anos de profissão.{" "}
+                  <b>
+                    Mestre em Avaliação Física e Especialista em Treinamento
+                  </b>
+                  , transformo objetivos em resultados.
                 </p>
                 <p>
-                  Com mais de <b>10 anos como pesquisador na área</b>, faço minhas avaliações e
-                  montagem dos treinamentos paltados na ciência, potencializando a realização das
-                  metas dos meus alunos.
+                  Com mais de <b>10 anos como pesquisador na área</b>, faço
+                  minhas avaliações e montagem dos treinamentos paltados na
+                  ciência, potencializando a realização das metas dos meus
+                  alunos.
                 </p>
                 <a
                   className="sobre-curriculo"
@@ -145,7 +142,9 @@ function Personal() {
               </div>
               <div className="servico-content">
                 <h3>Avaliação</h3>
-                <p>Avaliação morfológica, cardiorrespiratória e neuromuscular.</p>
+                <p>
+                  Avaliação morfológica, cardiorrespiratória e neuromuscular.
+                </p>
                 <a
                   href="https://wa.me/5583996157815?text=Quero%20agendar%20uma%20avalia%C3%A7%C3%A3o%20!"
                   target="_blank"
@@ -165,8 +164,8 @@ function Personal() {
               <div className="servico-content">
                 <h3>Personal Trainer</h3>
                 <p>
-                  Acompanhamento individual para resultados acelerados. Treino 100% personalizado,
-                  incluso todas as avaliações.
+                  Acompanhamento individual para resultados acelerados. Treino
+                  100% personalizado, incluso todas as avaliações.
                 </p>
                 <a
                   href="https://wa.me/5583996157815?text=Ol%C3%A1%21%20Tenho%20interesse%20em%20contratar%20seu%20servi%C3%A7o%20de%20personal%20trainer%21"
@@ -204,8 +203,8 @@ function Personal() {
         <div className="container">
           <h2>Atendimento em Esperança-PB</h2>
           <p>
-            Atendo alunos presencialmente em Esperança-PB e também de forma online para toda a
-            Paraíba e Brasil.
+            Atendo alunos presencialmente em Esperança-PB e também de forma
+            online para toda a Paraíba e Brasil.
           </p>
         </div>
       </section>
@@ -225,7 +224,10 @@ function Personal() {
         <div className="container">
           <div className="section-header">
             <h2>Por Que Escolher Leandro Oliota?</h2>
-            <p>A resposta é simples, seu corpo merece qualidade e sua saúde exige cuidado!</p>
+            <p>
+              A resposta é simples, seu corpo merece qualidade e sua saúde exige
+              cuidado!
+            </p>
           </div>
         </div>
       </section>
@@ -254,15 +256,18 @@ function Personal() {
               onClick={() => faqHandleClick(0)}
             >
               <button className="faq-question">
-                O treino online realmente funciona?<span className="faq-icon">+</span>
+                O treino online realmente funciona?
+                <span className="faq-icon">+</span>
               </button>
               <div className="faq-answer">
                 <p>
-                  Sim. O que gera resultado não é a presença física do personal, mas sim a
-                  estratégia correta, a execução adequada e o acompanhamento contínuo. Você recebe
-                  um treino estruturado especificamente para seu objetivo, além de orientação e
-                  ajustes conforme sua evolução.Treino online com método funciona — a maioria dos
-                  meus alunos são on-online e todos apresentam bastante resultado.
+                  Sim. O que gera resultado não é a presença física do personal,
+                  mas sim a estratégia correta, a execução adequada e o
+                  acompanhamento contínuo. Você recebe um treino estruturado
+                  especificamente para seu objetivo, além de orientação e
+                  ajustes conforme sua evolução.Treino online com método
+                  funciona — a maioria dos meus alunos são on-online e todos
+                  apresentam bastante resultado.
                 </p>
               </div>
             </div>
@@ -276,9 +281,10 @@ function Personal() {
               </button>
               <div className="faq-answer">
                 <p>
-                  Cada aluno passa por uma avaliação estratégica antes de iniciar.Analiso: Seu nível
-                  atual; Seu histórico de treino; Suas limitações; Sua rotina; Seu objetivo. Com
-                  base nisso, o treino é montado individualmente. Não trabalho com planilhas
+                  Cada aluno passa por uma avaliação estratégica antes de
+                  iniciar.Analiso: Seu nível atual; Seu histórico de treino;
+                  Suas limitações; Sua rotina; Seu objetivo. Com base nisso, o
+                  treino é montado individualmente. Não trabalho com planilhas
                   genéricas.
                 </p>
               </div>
@@ -288,13 +294,15 @@ function Personal() {
               onClick={() => faqHandleClick(2)}
             >
               <button className="faq-question">
-                Sou iniciante. Posso fazer o acompanhamento?<span className="faq-icon">+</span>
+                Sou iniciante. Posso fazer o acompanhamento?
+                <span className="faq-icon">+</span>
               </button>
               <div className="faq-answer">
                 <p>
-                  O programa é adaptado para: ✔ Iniciantes; ✔ Intermediários ✔ Pessoas retornando
-                  aos treinos ✔ Quem já treina mas não evolui. O treino respeita seu nível atual e
-                  evolui conforme seu progresso.
+                  O programa é adaptado para: ✔ Iniciantes; ✔ Intermediários ✔
+                  Pessoas retornando aos treinos ✔ Quem já treina mas não
+                  evolui. O treino respeita seu nível atual e evolui conforme
+                  seu progresso.
                 </p>
               </div>
             </div>
@@ -303,13 +311,15 @@ function Personal() {
               onClick={() => faqHandleClick(3)}
             >
               <button className="faq-question">
-                Em quanto tempo começo a ver resultados?<span className="faq-icon">+</span>
+                Em quanto tempo começo a ver resultados?
+                <span className="faq-icon">+</span>
               </button>
               <div className="faq-answer">
                 <p>
-                  Resultados variam de acordo com: Frequência, Alimentação, Comprometimento,
-                  Condição inicial. Mas muitos alunos já percebem melhora em força, disposição e
-                  medidas nas primeiras semanas. O foco é evolução constante e sustentável — não
+                  Resultados variam de acordo com: Frequência, Alimentação,
+                  Comprometimento, Condição inicial. Mas muitos alunos já
+                  percebem melhora em força, disposição e medidas nas primeiras
+                  semanas. O foco é evolução constante e sustentável — não
                   promessa milagrosa.
                 </p>
               </div>
@@ -343,7 +353,11 @@ function Personal() {
               >
                 <FaFacebook />
               </a>
-              <a href="https://github.com/LeandroDevLab" target="_blank" rel="noopener noreferrer">
+              <a
+                href="https://github.com/LeandroDevLab"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <FaGithub />
               </a>
               <a
@@ -356,7 +370,10 @@ function Personal() {
             </div>
           </div>
           <div className="footer-bottom">
-            <p>&copy; 2026 Leandro Oliota | Personal Trainer. Todos os direitos reservados.</p>
+            <p>
+              &copy; 2026 Leandro Oliota | Personal Trainer. Todos os direitos
+              reservados.
+            </p>
             <p>CREF: 002793-G/PB</p>
             <p>
               <a href="#privacidade">Política de Privacidade</a>
@@ -369,8 +386,9 @@ function Personal() {
         <div className="container">
           <h3>Política de Privacidade</h3>
           <p>
-            Respeitamos a sua privacidade. Os dados coletados são utilizados apenas para gestão dos
-            alunos e comunicação. Não compartilhamos informações com terceiros sem consentimento.
+            Respeitamos a sua privacidade. Os dados coletados são utilizados
+            apenas para gestão dos alunos e comunicação. Não compartilhamos
+            informações com terceiros sem consentimento.
           </p>
         </div>
       </section>
